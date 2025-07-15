@@ -44,7 +44,7 @@ RUN /opt/conda/bin/conda run -n robomimic_venv pip install "numpy<2.0"
 # Clone and install robomimic
 WORKDIR /opt
 RUN git clone https://github.com/ARISE-Initiative/robomimic.git && \
-    /opt/conda/bin/conda run -n robomimic_venv pip install -r robomimic/requirements.txt && \
+    /opt/conda/bin/conda run -n robomimic_venv pip install -r robomimic/requirements-docs.txt && \
     /opt/conda/bin/conda run -n robomimic_venv pip install -e robomimic
 
 # Install robosuite

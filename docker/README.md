@@ -29,7 +29,7 @@ docker build -f Dockerfile.robomimic.gpu -t robomimic .
 
 ## 🚀 Run the Container (Background)
 ```bash
-./start.sh
+./docker/start.sh
 ```
 
 This script will:
@@ -40,7 +40,7 @@ This script will:
 
 ## 🔁 Attach to the Running Container
 ```bash
-./into.sh
+./docker/into.sh
 ```
 This will open an interactive shell inside the running container with the conda environment activated.
 
